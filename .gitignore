@@ -1,0 +1,26 @@
+# Node dependencies
+node_modules/
+
+# Lock files
+package-lock.json
+
+# Tailwind output (generated)
+src/output.css
+
+# Logs
+npm-debug.log*
+*.log
+
+# Environment
+.env
+
+# Build / dist
+dist/
+build/
+
+# Editor directories
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
