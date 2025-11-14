@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+      rel="stylesheet"
+    />
+
+    <!-- 👇 This part is REQUIRED for Material Symbols to scale properly -->
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 35px;
+        /* <-- optical size controls scaling behavior */
+        font-size: 27px;
+        /* <-- set size here */
+        line-height: 1;
+        /* prevents weird spacing */
+      }
+    </style>
+  </head>
+
+  <body class="bg-black text-white">
+    <div class="flex container mx-auto max-w-6xl h-screen">
+      <!-- First section -->
+      <div class="first w-1/4 border border-black">
+        <div class="logo invert gap-1 pb-1.5 flex justify-center">
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            class="relative right-[164px] w-8"
+          >
+            <path
+              d="M21.742 21.75l-7.563-11.179 7.056-8.321h-2.456l-5.691 6.714-4.54-6.714H2.359l7.29 10.776L2.25 21.75h2.456l6.035-7.118 4.818 7.118h6.191-.008zM7.739 3.818L18.81 20.182h-2.447L5.29 3.818h2.447z"
+            ></path>
+          </svg>
+        </div>
+
+        <div class="sidebar flex h-full">
+          <ul
+            class="flex flex-col pl-1.5 text-[25px] font-sans space-y-3 [&>li]:flex [&>li]:items-center [&>li]:gap-x-3 h-full relative right-10 top-[55px]"
+          >
+            <li><span class="material-symbols-outlined">add</span> Home</li>
+            <li>
+              <span class="material-symbols-outlined">notifications</span>
+              Notifications
+            </li>
+            <li><span class="material-symbols-outlined">face_2</span> Grock</li>
+            <li>
+              <span class="material-symbols-outlined">bookmark</span> Bookmarks
+            </li>
+            <li>
+              <span class="material-symbols-outlined">group</span> Communities
+            </li>
+            <li>
+              <span class="material-symbols-outlined">superscript</span> Premium
+            </li>
+            <li>
+              <span class="material-symbols-outlined">account_box</span> Profile
+            </li>
+            <li>
+              <span class="material-symbols-outlined">more_horiz</span> More
+            </li>
+            <button
+              class="h-[55px] w-[250px] text-black rounded-4xl text-[22px] font-bold bg-white"
+            >
+              post
+            </button>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Second section -->
+      <div class="second flex-1 border-y-black border border-gray-600">
+        <div class="top flex p-2 relative">
+          <div
+            class="absolute bg-blue-600 bottom-0 left-28 w-13 rounded-full h-1.5"
+          ></div>
+          <div
+            class="left bg-red-3 0 w-1/2 flex justify-center items-center font-bold text-lg"
+          >
+            For You
+          </div>
+          <div
+            class="right bg-green-3 00 w-1/2 flex justify-center items-center font-bold text-lg"
+          >
+            Following
+          </div>
+          <div class="setting mx-auto">
+            <span class="material-symbols-outlined"> settings </span>
+          </div>
+        </div>
+        <div class="h-[1px] w-full bg-gray-700"></div>
+        <div class="foryou w-full">
+          <div class="img mx-0">
+            <img
+              src="https://pbs.twimg.com/profile_images/1502908713791033353/0yGuRPA__400x400.jpg"
+              alt=""
+              class="src h-5 w-5 relative rounded-full top-[45px] h-10 w-10 right-[1px]"
+            />
+          </div>
+          <input
+            class="w-full h-[45px] mb-[35px] outline-none flex gap-4 ml-10 pr-[60px]"
+            type="text"
+            placeholder="What s happening?"
+          />
+        </div>
+        <div>
+          <span class="material-symbols-outlined absolute left-[480px]">
+            globe
+          </span>
+          <span class="material-symbols-outlined absolute left-[520px]">
+            image
+          </span>
+          <span class="material-symbols-outlined absolute left-[560px]">
+            gif_box
+          </span>
+          <span class="material-symbols-outlined absolute left-[600px]">
+            mood
+          </span>
+          <span class="material-symbols-outlined absolute left-[640px]">
+            calendar_clock
+          </span>
+          <span class="material-symbols-outlined absolute left-[680px]">
+            location_on
+          </span>
+          <button
+            class="h-[45px] w-[105px] relative left-[467px] top-[-8px] text-black rounded-4xl text-[22px] font-bold bg-white"
+          >
+            post
+          </button>
+        </div>
+        <div class="h-px w-full bg-gray-700"></div>
+        <div class="posts">
+          <div class="post flex">
+            <div class="img">
+              <img
+                src="https://pbs.twimg.com/profile_images/1967440530591367168/iYJZ8ygx_400x400.jpg"
+                alt=""
+                class="src w-9 h-9 rounded-full mr-5 gap-3"
+              />
+            </div>
+            <span class="gap-3 flex relative">
+              Sam Altman
+              <div class="flex relative top-[5px] text-[12px] text-gray-500">
+                @SAMA &bull; 2hr ago
+              </div>
+              <div class="flex relative text-[23px] top-[23px] right-[206px]">
+                True or False
+              </div>
+            </span>
+          </div>
+          <div>
+            <img
+              src="https://pbs.twimg.com/media/G4kecb9WMAANWe1?format=jpg&name=small"
+              alt=""
+              class="relative top-[32px] rounded-2xl left-[43px] border border-gray-500"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Third section -->
+      <div class="third w-1/4 border border-black p-3">
+        <div
+          class="search w-full rounded-full bg-gray-900 h-10 flex items-center px-3"
+        >
+          <span class="material-symbols-outlined text-gray-400 text-[24px]"
+            >search</span
+          >
+          <input
+            type="text"
+            placeholder="Search"
+            class="bg-transparent outline-none text-white w-full px-2 placeholder-gray-400"
+          />
+        </div>
+        <div
+          class="whats p-3 m-2.5 relative top-2.5 rounded-2xl bg-[#16181c] w-full h-[410px] space-y-3rounded-2xl items-center justify-center"
+        >
+          <h1 class="text-white text-xl font-bold px-3">What’s happening?</h1>
+          <div class="item my-3 hover:bg-grey-800 cursor-pointer px-3">
+            <div class="font-bold text-gray-200 text-sm">Trending In India</div>
+            <div class="font-black">#orry</div>
+            <div>40.2k post</div>
+          </div>
+          <div class="item my-3 hover:bg-grey-800 cursor-pointer px-3">
+            <div class="font-bold text-gray-200 text-sm">Trending In India</div>
+            <div class="font-black">#harry</div>
+            <div>40.2k post</div>
+          </div>
+          <div class="item my-3 hover:bg-grey-800 cursor-pointer px-3">
+            <div class="font-bold text-gray-200 text-sm">Trending In India</div>
+            <div class="font-black">#web developer</div>
+            <div>40.2k post</div>
+          </div>
+        </div>
+        <div
+          class="whats p-3 m-2.5 relative top-2.5 rounded-2xl bg-[#16181c] w-full space-y-3rounded-2xl items-center justify-center"
+        >
+          <h1 class="text-white text-xl font-bold px-3">Who to follow</h1>
+          <div class="item my-3 hover:bg-grey-800 cursor-pointer px-3">
+            <div class="font-bold text-gray-200 text-lg">AKSHAY KUMAR</div>
+            <div class="font-black"></div>
+            <div></div>
+          </div>
+          <div class="item my-3 hover:bg-grey-800 cursor-pointer px-3">
+            <div class="font-bold text-white text-lg">AMISHA PATEL</div>
+            <div class="font-black"></div>
+            <div></div>
+          </div>
+          <div class="item my-3 hover:bg-grey-800 cursor-pointer px-3">
+            <div class="font-bold text-gray-200 text-lg">VIRAT KOHLI</div>
+            <div class="font-black"></div>
+            <div></div>
+            <div class="text-blue-600 underline m-3 mt-1 ml-0">Show more</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
